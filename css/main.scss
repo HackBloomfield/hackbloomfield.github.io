@@ -8,6 +8,10 @@ $main-color: #bb63d5;
 body{
   text-align: center;
 }
+a{
+  color: $main-color;
+  text-decoration: underline;
+}
 #mainInfoBox{
   width: 75%;
   text-align: center;
@@ -22,4 +26,13 @@ body{
     font-size: 1.5em;
     color: $main-color;
   }
+}
+
+#aboutHackathon{
+  display: inline-block;
+  max-width: 400px;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 20px;
+  color: #7f8082;
 }
