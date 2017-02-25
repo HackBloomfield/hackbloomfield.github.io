@@ -16,7 +16,7 @@
 title: HackBloomfield 2017
 email: hello@hackbloomfield.com
 description: > # this means to ignore newlines until "baseurl:"
-  HackBloomfield is a 24-hour coding competition and learning experience at Bloomfield Hills High School. Registration opening soon!
+  HackBloomfield is a 24-hour coding marathon at Bloomfield Hills High School. It's completely free (including free food and swag!), and is open to anyone in high school, even if you've never coded before!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: hackbloomfield
