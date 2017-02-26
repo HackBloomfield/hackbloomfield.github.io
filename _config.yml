@@ -24,6 +24,7 @@ github_username:  hackbloomfield
 
 collections:
 - faqs
+- schedule
 
 # Build settings
 markdown: kramdown
