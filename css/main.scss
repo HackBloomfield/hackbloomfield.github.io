@@ -10,7 +10,6 @@ body{
   text-align: center;
   margin: 0;
   padding: 0;
-  padding-bottom: 25%;
 }
 a{
   color: $main-color;
@@ -112,7 +111,9 @@ h1{
     font-size: 0.5em;
   }
 }
-
+#schedule{
+  padding-bottom: 25%;
+}
 #theSchedule{
   width: 75%;
   text-align: center;
