@@ -43,7 +43,7 @@
   </div>
   <div id="sponsors">
     <h1>Sponsors</h1>
-    <span id="sponsorInfo">HackBloomfield will bring together some of the brightest aspiring programmers and makers in the Metro Detroit/Windsor area! If your company is interested in sponsoring HackBloomfield, send us an email at <a href="mailto:hello@hackbloomfield.com">hello@hackbloomfield.com</a></span>
+    <span id="sponsorInfo">HackBloomfield will bring together some of the brightest aspiring programmers and makers in the Metro Detroit/Windsor area! If your company is interested in sponsoring HackBloomfield, send us an email at <a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
   </div>
   <div id="schedule" class="page">
     {% assign sat = (site.schedule | where: "day", "sat") %}
