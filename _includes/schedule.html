@@ -1,0 +1,31 @@
+<div id="schedule" class="page">
+  {% assign sat = (site.schedule | where: "day", "sat") %}
+  {% assign sun = (site.schedule | where: "day", "sun") %}
+  {% assign saturday = (sat | sort: "timesort") %}
+  {% assign sunday = (sun | sort: "timesort") %}
+  <h1 class="pageHeader">Schedule</h1>
+  <div id="theSchedule">
+    <div class="scheduleDay">
+      <h1>saturday</h1>
+      {% for event in saturday %}
+      <div class="event">
+        <span class="time">{{ event.time }}</span>
+        <span class="eventName">{{ event.name }}</span>
+        {% if event.location != null %}<span class="location">({{ event.location }})</span>{% endif %}
+        <span class="description">{{ event.description }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="scheduleDay">
+      <h1>sunday</h1>
+      {% for event in sunday %}
+      <div class="event">
+        <span class="time">{{ event.time }}</span>
+        <span class="eventName">{{ event.name }}</span>
+        {% if event.location != null %}<span class="location">({{ event.location }})</span>{% endif %}
+        <span class="description">{{ event.description }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -9,77 +9,12 @@
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-  <div id="navBar">
-    <ul>
-      <li><a href="#mainPage">home</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#sponsors">sponsors</a></li>
-      <li><a href="#schedule">schedule</a></li>
-    </ul>
-  </div>
-  <div id="mainPage" class="page">
-    <div id="mainInfoBox">
-      <img src="/assets/HackBHHSLogo.png" id="hawklogo" />
-      <img src="/assets/hackbloomfieldLogo.png" id="mainLogo" />
-      <span class="infoSpan">{{ page.dates }} • {{ page.location}}</span>
-    </div>
-    <div id="aboutHackathon">
-      <span>{{ site.description }}</span>
-    </div>
-    <div id="signUpButton">
-      <a href="https://hackbloomfield.typeform.com/to/QYidCE" target="_blank">sign up!</a>
-      <a href="https://goo.gl/forms/eigtdWHh8UtEj7uh2" target="_blank" id="mentors">mentor registration</a>
-    </div>
-  </div>
-  <div id="faq" class="page">
-    <h1 class="pageHeader">FAQ</h1>
-    <div id="faqs">
-      {% for faq in site.faqs %}
-      <div class="faq">
-        <span class="header">{{ faq.question }}</span>
-        <span class="answer">{{ faq.answer }}</span>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  <div id="sponsors">
-    <h1>Sponsors</h1>
-    <span id="sponsorInfo">HackBloomfield will bring together some of the brightest aspiring programmers and makers in the Metro Detroit/Windsor area! If your company is interested in sponsoring HackBloomfield, send us an email at <a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
-  </div>
-  <div id="schedule" class="page">
-    {% assign sat = (site.schedule | where: "day", "sat") %}
-    {% assign sun = (site.schedule | where: "day", "sun") %}
-    {% assign saturday = (sat | sort: "timesort") %}
-    {% assign sunday = (sun | sort: "timesort") %}
-    <h1 class="pageHeader">Schedule</h1>
-    <div id="theSchedule">
-      <div class="scheduleDay">
-        <h1>saturday</h1>
-        {% for event in saturday %}
-        <div class="event">
-          <span class="time">{{ event.time }}</span>
-          <span class="eventName">{{ event.name }}</span>
-          {% if event.location != null %}<span class="location">({{ event.location }})</span>{% endif %}
-          <span class="description">{{ event.description }}</span>
-        </div>
-        {% endfor %}
-      </div>
-      <div class="scheduleDay">
-        <h1>sunday</h1>
-        {% for event in sunday %}
-        <div class="event">
-          <span class="time">{{ event.time }}</span>
-          <span class="eventName">{{ event.name }}</span>
-          {% if event.location != null %}<span class="location">({{ event.location }})</span>{% endif %}
-          <span class="description">{{ event.description }}</span>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-  <!-- MLH banner - only add once official MLH event
-  <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
--->
+  {% include navbar.html %}
+  {% include mainpage.html %}
+  {% include faqs.html %}
+  {% include sponsors.html %}
+  {% include schedule.html %}
+  <!-- {% include mlhbanner.html %} -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
 $(function() {
