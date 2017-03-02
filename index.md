@@ -7,4 +7,3 @@ title: HackBloomfield
 dates: May 20-21
 location: Bloomfield Hills High School
 ---
-HackBloomfield is a `free` 24-hour programming marathon!
