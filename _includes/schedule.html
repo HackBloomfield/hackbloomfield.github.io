@@ -1,4 +1,5 @@
 <div id="schedule" class="page">
+  <div id="commonsImg"></div>
   {% assign sat = (site.schedule | where: "day", "sat") %}
   {% assign sun = (site.schedule | where: "day", "sun") %}
   {% assign saturday = (sat | sort: "timesort") %}

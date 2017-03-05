@@ -182,13 +182,3 @@ h1{
   position: absolute;
   z-index: -1;
 }
-#faqs::after {
-  content: "";
-  background: url(/assets/commons.jpg);
-  background-repeat:no-repeat;
-  background-position: center;
-  opacity: 0.1;
-  display: block;
-  position: absolute;
-  z-index: -1;
-}
