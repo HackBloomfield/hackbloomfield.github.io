@@ -27,6 +27,7 @@ h1{
   background-color: rgba(255,255,255,0.7);
   position: fixed;
   min-height: 75px;
+  z-index: 20;
   bottom: 0;
   margin: 0;
   ul{
@@ -166,4 +167,28 @@ h1{
   font-size: 1.25em;
   color: $main-color;
   font-weight: normal;
+}
+#mainPage::after {
+  content: "";
+  background: url(/assets/bhhs.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+#faqs::after {
+  content: "";
+  background: url(/assets/commons.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  opacity: 0.1;
+  display: block;
+  position: absolute;
+  z-index: -1;
 }
