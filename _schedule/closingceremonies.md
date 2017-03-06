@@ -2,6 +2,6 @@
 day: sun
 name: closing ceremonies
 location: auditorium
-timesort: 1430
-time: "2:30"
+timesort: 1400
+time: "2:00"
 ---
