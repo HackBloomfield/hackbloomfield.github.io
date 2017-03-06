@@ -1,6 +1,6 @@
 ---
 day: sun
 name: end hackathon
-timesort: 1600
-time: "4:00"
+timesort: 1530
+time: "3:30"
 ---
