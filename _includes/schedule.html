@@ -13,7 +13,7 @@
         <span class="time">{{ event.time }}</span>
         <span class="eventName">{{ event.name }}</span>
         {% if event.location != null %}<span class="location">({{ event.location }})</span>{% endif %}
-        <span class="description">{{ event.description }}</span>
+        <span class="description">{{ event.content }}</span>
       </div>
       {% endfor %}
     </div>
@@ -24,7 +24,7 @@
         <span class="time">{{ event.time }}</span>
         <span class="eventName">{{ event.name }}</span>
         {% if event.location != null %}<span class="location">({{ event.location }})</span>{% endif %}
-        <span class="description">{{ event.description }}</span>
+        <span class="description">{{ event.content }}</span>
       </div>
       {% endfor %}
     </div>
