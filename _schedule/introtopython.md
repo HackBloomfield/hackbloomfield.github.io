@@ -1,6 +1,6 @@
 ---
 day: sat
-name: programming for beginners
+name: intro to programming
 timesort: 1300
 time: "1:00"
 location: A103
