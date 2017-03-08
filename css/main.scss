@@ -76,10 +76,16 @@ h1{
   width: 100%;
   padding-top: 30px;
   text-align: center;
-}
-#sponsorInfo{
-  width: 75%;
-  display: inline-block;
+  #sponsorInfo{
+    display: block;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  img{
+    width: 10%;
+    display: inline-block;
+  }
 }
 #mainInfoBox{
   width: 75%;

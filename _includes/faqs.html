@@ -1,7 +1,7 @@
 <div id="faq" class="page">
   <h1 class="pageHeader">FAQ</h1>
   <div id="faqs">
-    {% for faq in site.faqs %}
+    {% for faq in site.data.faqs %}
     <div class="faq">
       <span class="header">{{ faq.question }}</span>
       <span class="answer">{{ faq.answer }}</span>
