@@ -190,3 +190,8 @@ h1{
   -moz-background-size: cover;
   background-size: cover;
 }
+@media only screen and (max-width: 500px){
+  #navBar{
+    font-size: 0.75em;
+  }
+}
