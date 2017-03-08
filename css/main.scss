@@ -186,4 +186,7 @@ h1{
   display: block;
   position: absolute;
   z-index: -1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
