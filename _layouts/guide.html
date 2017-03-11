@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="shortcut icon" type="image/png" href="/assets/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/css/guide.css" />
+  </head>
+  <body>
+    <div id="book">
+      <div id="mainPage">
+        <img src="/assets/hackbhhslogo.png" id="blackHawkLogo" />
+        <img src="/assets/hackBloomfieldLogo.png" id="hackBloomfieldLogo" />
+        <span class="infoSpan">{{ site.dates }} • {{ site.location}}</span>
+        <div id="mainBody">
+          <span id="titleSpan">{{ page.title }}</span>
+          {% if page.author != null %}
+            <span id="authorSpan">by {{ page.author }}</span>
+          {% endif %}
+        </div>
+      </div>
+      <div id="bookBody">
+        {{ content }}
+      </div>
+    </div>
+  </body>
+</html>

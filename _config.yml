@@ -21,9 +21,21 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: hackbloomfield
 github_username:  hackbloomfield
+dates: May 20-21
+location: Bloomfield Hills High School
 
 collections:
-- schedule
+  schedule:
+    output: false
+  guides:
+    output: true
+
+defaults:
+  -
+    scope:
+      collection: guides
+    values:
+      layout: guide
 
 # Build settings
 markdown: kramdown
