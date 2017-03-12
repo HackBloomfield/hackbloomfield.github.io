@@ -36,12 +36,16 @@ defaults:
       collection: guides
     values:
       layout: guide
+      # pdf: true
+      pdf_layout: guide
 
 # Build settings
 markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-assets
+  - jekyll-pdf
 exclude:
   - Gemfile
   - Gemfile.lock
