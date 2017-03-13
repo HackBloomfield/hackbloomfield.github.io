@@ -23,6 +23,8 @@ twitter_username: hackbloomfield
 github_username:  hackbloomfield
 dates: May 20-21
 location: Bloomfield Hills High School
+blackHawkLogo: /assets/HackBHHSLogo.png
+logo: /assets/hackbloomfieldLogo.png
 
 collections:
   schedule:
