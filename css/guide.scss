@@ -79,8 +79,14 @@ h2{
   color: $sub-color;
   font-size: 2em;
 }
-.highlighter-rouge, .highlight{
+.highlight{
   background-color: rgba(0,0,0,0.1);
   padding: 2px;
   border-radius: 5px;
+}
+.highlighter-rouge{
+  background-color: rgba(0,0,0,0.1);
+  padding: 0;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0.5);
 }
