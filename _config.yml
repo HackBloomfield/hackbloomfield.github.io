@@ -52,3 +52,6 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - functions
+  - firebase.json
+  - database.rules.json
