@@ -19,13 +19,13 @@ Congratulations! You've written your first line of code! Now save that file on y
 # Running your program
 ## On Mac
 Open the _Terminal_ app. Type `python ~/Desktop/main.py` and press enter. You should get an output of
-{% highlight console %}
+{% highlight python %}
 Hello, world
 {% endhighlight %}
 Notice how in order to run your program, you typed the command `python` followed by the location of your Python script.
 ## On Windows
 Open the Command Prompt. Type `py C:/Users/%username%/Desktop/main.py` and press enter. You should get an output of
-{% highlight console %}
+{% highlight python %}
 Hello, world
 {% endhighlight %}
 Notice how in order to run your program, you typed the command `py` followed by the location of your Python script.
