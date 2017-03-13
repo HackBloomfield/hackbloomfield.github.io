@@ -29,6 +29,7 @@ collections:
     output: false
   guides:
     output: true
+    permalink: /:collection/:title/
 
 defaults:
   -
