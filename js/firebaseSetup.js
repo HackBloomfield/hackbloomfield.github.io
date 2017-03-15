@@ -7,3 +7,4 @@
     messagingSenderId: "475566387283"
   };
   firebase.initializeApp(config);
+  var provider = new firebase.auth.GoogleAuthProvider();

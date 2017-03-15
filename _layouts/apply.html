@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/main.css" />
+    <style>body{padding-top: 20px; padding-bottom: 20px;}</style>
+    <title>Apply • HackBloomfield</title>
+  </head>
+  <body>
+    <img src="{{ site.blackHawkLogo }}" id="hawkLogo" />
+    <img src="{{ site.logo }}" id="mainLogo" />
+    <span class="infoSpan">Apply Here</span>
+    <div class="notLoggedIn">
+      <div id="loginButton"></div>
+    </div>
+    <div class="loggedIn">
+      <form id="applyForm">
+        <span class="formLabel">What's your name?</span>
+        <input type="text" name="fullName" id="nameInput" />
+        <span class="formLabel">What's your email address?</span>
+        <input type="text" name="email" id="emailInput" readonly />
+        <span class="formLabel">When were you born?</span>
+        <input type="text" name="dobMonth" class="dobInput" maxlength="2" placeholder="MM" />
+        <input type="text" name="dobDay" class="dobInput" maxlength="2" placeholder="DD" />
+        <input type="text" name="dobYear" class="dobInput" maxlength="4" placeholder="YYYY" id="year" />
+        <span class="formLabel">What grade are you in?</span>
+        <input type="radio" name="grade" value="9"> <span class="radioLabel">9th</span>
+        <input type="radio" name="grade" value="10"> <span class="radioLabel">10th</span>
+        <input type="radio" name="grade" value="11"> <span class="radioLabel">11th</span>
+        <input type="radio" name="grade" value="12"> <span class="radioLabel">12th</span>
+        <span class="formLabel">What gender do you identify as?</span>
+        <input type="text" name="gender" />
+        <span class="formLabel">What's your phone number?</span>
+        <input type="text" name="phone" maxlength="10" />
+        <span class="formLabel">What's your t-shirt size?</span>
+        <input type="radio" name="tshirt" value="S"> <span class="radioLabel">S</span>
+        <input type="radio" name="tshirt" value="M"> <span class="radioLabel">M</span>
+        <input type="radio" name="tshirt" value="L"> <span class="radioLabel">L</span>
+        <input type="radio" name="tshirt" value="XL"> <span class="radioLabel">XL</span>
+        <span class="formLabel">Any dietary restrictions we should know about?</span>
+        <input type="text" name="food" />
+        <span class="formLabel">What school are you from?</span>
+        <input type="radio" name="school" value="BHHS"> <span class="radioLabel">BHHS</span>
+        <input type="radio" name="school" value="other" id="otherSchoolButton"> <span class="radioLabel"><input type="text" id="otherSchool"  placeholder="other" /></span>
+        <span class="formLabel">What's your GitHub username?</span>
+        <input type="text" name="github" />
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+    {% include js.html %}
+    <script type="text/javascript" src="/js/applyForm.js"></script>
+  </body>
+</html>
