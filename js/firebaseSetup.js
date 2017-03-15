@@ -8,3 +8,4 @@
   };
   firebase.initializeApp(config);
   var provider = new firebase.auth.GoogleAuthProvider();
+  var storageRef = firebase.storage().ref();
