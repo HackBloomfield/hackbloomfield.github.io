@@ -94,6 +94,9 @@ h1{
   margin-right: auto;
   margin-bottom: 20px;
 }
+#smallLogo{
+  width: 67%;
+}
 #hawklogo{
   height: 100px;
   display: block;
@@ -272,6 +275,9 @@ h1{
     display: block;
     max-width: 500px;
   }
+}
+#appStatus{
+  font-weight: bold;
 }
 @media screen and (max-width: 500px){
   #applyForm{
