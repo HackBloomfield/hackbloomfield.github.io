@@ -55,3 +55,4 @@ exclude:
   - functions
   - firebase.json
   - database.rules.json
+  - node_modules
