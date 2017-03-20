@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/HackBloomfield/hackbloomfield.github.io#readme",
   "dependencies": {
-    "angular": "^1.6.3"
+    "@angular/common": "^2.4.10",
+    "@angular/core": "^2.4.10",
+    "rxjs": "^5.2.0",
+    "zone.js": "^0.7.2"
   }
 }

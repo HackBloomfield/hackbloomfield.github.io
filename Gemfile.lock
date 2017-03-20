@@ -4,6 +4,7 @@ GEM
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
     backports (3.6.8)
+    browserify_rb (1.0.0)
     colorator (1.1.0)
     concurrent-ruby (1.0.5)
     digest (0.0.1)
@@ -35,6 +36,8 @@ GEM
       pathutil (>= 0.8)
       rack (> 1, < 2)
       sprockets (~> 3.3, < 3.7)
+    jekyll-browserify (1.1.1)
+      browserify_rb (~> 1.0.0)
     jekyll-feed (0.9.1)
       jekyll (~> 3.3)
     jekyll-pdf (0.1.6)
@@ -94,6 +97,7 @@ DEPENDENCIES
   jekyll (= 3.4.0)
   jekyll-admin
   jekyll-assets
+  jekyll-browserify
   jekyll-feed (~> 0.6)
   jekyll-pdf
   minima (~> 2.0)

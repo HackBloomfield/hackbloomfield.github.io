@@ -43,6 +43,9 @@ defaults:
       pdf_layout: guide
 
 # Build settings
+browserify:
+  exts: [".js"]
+  command: "browserify -"
 markdown: kramdown
 theme: minima
 gems:
@@ -55,3 +58,4 @@ exclude:
   - functions
   - firebase.json
   - database.rules.json
+  - node_modules
