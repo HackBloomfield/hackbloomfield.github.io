@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <style>body{padding-top: 20px; padding-bottom: 20px;}</style>
+  </head>
+  <body>
+    {% include header.html subtitle="Dashboard" %}
+    <div class="notLoggedIn">
+      <div id="loginButton"></div>
+    </div>
+    <div class="loggedIn">
+      <span id="appStatusTitle">Your applications status is…</span>
+      <span id="appStatus"></span>
+      <span class="signUpButton" id="applyButton"><a href="/apply">Submit/Edit Application</a></span>
+    </div>
+    {% include js.html %}
+    <script src="/js/dashboard.js"></script>
+  </body>
+</html>

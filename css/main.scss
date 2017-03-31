@@ -87,30 +87,33 @@ h1{
     display: inline-block;
   }
 }
+#mainLogo{
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+#smallLogo{
+  width: 67%;
+}
+#hawklogo{
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.infoSpan{
+  display: block;
+  font-size: 1.5em;
+  color: $main-color;
+}
 #mainInfoBox{
   width: 75%;
   text-align: center;
   margin: auto;
   padding-top: 5%;
-  #mainLogo{
-    width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-  }
-  #hawklogo{
-    height: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-  }
-  .infoSpan{
-    display: block;
-    font-size: 1.5em;
-    color: $main-color;
-  }
 }
 
 #aboutHackathon{
@@ -121,7 +124,7 @@ h1{
   color: $sub-color;
 }
 
-#signUpButton{
+.signUpButton{
   display: block;
   font-size: 2em;
   margin-top: 7%;
@@ -199,5 +202,93 @@ h1{
 @media only screen and (max-width: 500px){
   #navBar{
     font-size: 0.75em;
+  }
+}
+#loginButton{
+  width: 191px;
+  height: 46px;
+  background: url(/assets/login/btn_google_signin_dark_normal_web.png);
+  cursor: pointer;
+  margin: auto;
+  margin-top: 20px;
+}
+.loggedIn, .notLoggedIn{
+  display: none;
+}
+#applyForm{
+  text-align: left;
+  width: 75%;
+  margin: auto;
+  .formLabel{
+    font-size: 1.5em;
+    color: $main-color;
+    display: block;
+    margin-top: 10px;
+    max-width: 750px;
+  }
+  input{
+    display: block;
+    height: 50px;
+    font-size: 2em;
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    border-bottom: 1px solid $sub-color;
+    max-width: 75%;
+  }
+  input:focus{
+    border-bottom: 2px solid $main-color;
+    outline: none;
+  }
+  #emailInput{
+    color: $sub-color;
+  }
+  .dobInput{
+    width: 50px;
+    display: inline;
+  }
+  #year{
+    width: 100px;
+  }
+  input[type="radio"]{
+    display: inline-block;
+    margin:0;
+  }
+  .radioLabel{
+    vertical-align: bottom;
+    font-size: 2em;
+  }
+  #otherSchool{
+    display: inline;
+    font-size: 1em;
+    width: 200px;
+  }
+  input[type="submit"]{
+    background-color: $main-color;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .subLabel{
+    color: $sub-color;
+    font-size: 1em;
+    display: block;
+    max-width: 500px;
+  }
+}
+#appStatus{
+  font-weight: bold;
+}
+#headerDiv{
+  margin-bottom: 20px;
+}
+#applyButton{
+  display: none;
+}
+@media screen and (max-width: 500px){
+  #applyForm{
+    .formLabel{
+      font-size: 1.25em;
+    }
   }
 }

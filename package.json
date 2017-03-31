@@ -1,0 +1,25 @@
+{
+  "name": "hackbloomfield",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackBloomfield/hackbloomfield.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HackBloomfield/hackbloomfield.github.io/issues"
+  },
+  "homepage": "https://github.com/HackBloomfield/hackbloomfield.github.io#readme",
+  "dependencies": {
+    "@angular/common": "^2.4.10",
+    "@angular/core": "^2.4.10",
+    "rxjs": "^5.2.0",
+    "zone.js": "^0.7.2"
+  }
+}
