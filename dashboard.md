@@ -1,3 +1,4 @@
 ---
 layout: dashboard
+permalink: "/dashboard/"
 ---

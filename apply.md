@@ -1,4 +1,4 @@
 ---
 layout: apply
-permalink: "/apply"
+permalink: "/apply/"
 ---
