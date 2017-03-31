@@ -11,60 +11,92 @@
     </div>
     <div class="loggedIn">
       <form id="applyForm">
-        <span class="formLabel">What's your name?*</span>
-        <input type="text" name="fullName" id="nameInput" required />
-        <span class="formLabel">What's your email address?*</span>
-        <input type="text" name="email" id="emailInput" readonly required />
-        <span class="formLabel">When were you born?*</span>
-        <input type="text" name="dobMonth" class="dobInput" maxlength="2" placeholder="MM" required />
-        <input type="text" name="dobDay" class="dobInput" maxlength="2" placeholder="DD" required />
-        <input type="text" name="dobYear" class="dobInput" maxlength="4" placeholder="YYYY" id="year" required />
-        <span class="formLabel">What grade are you in?*</span>
-        <span class="subLabel">HackBloomfield is only open to high schoolers. If you've graduated, you can still come and mentor</span>
-        <input type="radio" name="grade" value="9" required> <span class="radioLabel">9th</span>
-        <input type="radio" name="grade" value="10" required> <span class="radioLabel">10th</span>
-        <input type="radio" name="grade" value="11" required> <span class="radioLabel">11th</span>
-        <input type="radio" name="grade" value="12" required> <span class="radioLabel">12th</span>
-        <span class="formLabel">What gender do you identify as?</span>
-        <span class="subLabel">You may skip this one</span>
-        <input type="text" name="gender" />
-        <span class="formLabel">What's your phone number?*</span>
-        <input type="text" name="phone" maxlength="10" required />
-        <span class="formLabel">What's your t-shirt size?*</span>
-        <span class="subLabel">That's right, free shirts!</span>
-        <input type="radio" name="tshirt" value="S" required> <span class="radioLabel">S</span>
-        <input type="radio" name="tshirt" value="M" required> <span class="radioLabel">M</span>
-        <input type="radio" name="tshirt" value="L" required> <span class="radioLabel">L</span>
-        <input type="radio" name="tshirt" value="XL" required> <span class="radioLabel">XL</span>
-        <span class="formLabel">Any dietary restrictions we should know about?</span>
-        <span class="subLable">And free food!</span>
-        <input type="text" name="food" />
-        <span class="formLabel">What school are you from?*</span>
-        <input type="radio" name="school" value="BHHS" required> <span class="radioLabel">BHHS</span>
-        <input type="radio" name="school" value="other" id="otherSchoolButton" required> <span class="radioLabel"><input type="text" id="otherSchool"  placeholder="other" /></span>
-        <span class="formLabel">What's your GitHub username?</span>
-        <span class="subLabel">If you don't know what this is, just skip it</span>
-        <input type="text" name="github" />
-        <span class="formLabel">How'd you find out about HackBloomfield?</span>
-        <input type="radio" name="refer" value="socialMedia"> <span class="radioLabel">Social Media</span>
-        <input type="radio" name="refer" value="MLH"> <span class="radioLabel">MLH</span>
-        <input type="radio" name="refer" value="posters"> <span class="radioLabel">Posters around school</span>
-        <input type="radio" name="refer" value="other"> <span class="radioLabel">Other</span>
-        <span class="formLabel">If you are from either of these places, would you be interested in a bus to HackBloomfield?</span>
-        <span class="subLabel">We can only provide a bus if there is enough interest and funding, so get your friends to sign up too!</span>
-        <input type="radio" name="bus" value="windsor"> <span class="radioLabel">Windsor</span>
-        <input type="radio" name="bus" value="toronto"> <span class="radioLabel">Toronto</span>
-        <span class="formLabel">Do you have a resume you'd like to share?</span>
-        <span class="subLabel">This is optional</span>
-        <input type="file" id="resumeUpload" />
-        <input type="hidden" value="" id="resumeLink" />
-        <span class="formLabel">Anything else we should know?</span>
-        <input type="text" name="anythingElse" />
-        <span class="formLabel">I agree to the terms of both the MLH Contest Terms and Conditions and the MLH Privacy Policy.*</span>
-        <span class="subLabel">Please note that you may receive pre and post-event informational e-mails and occasional messages about hackathons from MLH as per the MLH Privacy Policy.</span>
-        <input type="radio" name="mlh1" value="yes" required> <span class="radioLabel">Yes</span>
-        <span class="formLabel">I agree to the Major League Hacking Code of Conduct*</span>
-        <input type="radio" name="mlh2" value="yes" required> <span class="radioLabel">Yes</span>
+        <div class="formElement">
+          <span class="formLabel">What's your name?*</span>
+          <input type="text" name="fullName" id="nameInput" required />
+        </div>
+        <div class="formElement">
+          <span class="formLabel">What's your email address?*</span>
+          <input type="text" name="email" id="emailInput" readonly required />
+        </div>
+        <div class="formElement">
+          <span class="formLabel">When were you born?*</span>
+          <input type="text" name="dobMonth" class="dobInput" maxlength="2" placeholder="MM" required />
+          <input type="text" name="dobDay" class="dobInput" maxlength="2" placeholder="DD" required />
+          <input type="text" name="dobYear" class="dobInput" maxlength="4" placeholder="YYYY" id="year" required />
+        </div>
+        <div class="formElement">
+          <span class="formLabel">What grade are you in?*</span>
+          <span class="subLabel">HackBloomfield is only open to high schoolers. If you've graduated, you can still come and mentor</span>
+          <input type="radio" name="grade" value="9" required> <span class="radioLabel">9th</span>
+          <input type="radio" name="grade" value="10" required> <span class="radioLabel">10th</span>
+          <input type="radio" name="grade" value="11" required> <span class="radioLabel">11th</span>
+          <input type="radio" name="grade" value="12" required> <span class="radioLabel">12th</span>
+        </div>
+        <div class="formElement">
+          <span class="formLabel">What gender do you identify as?</span>
+          <span class="subLabel">You may skip this one</span>
+          <input type="text" name="gender" />
+        </div>
+        <div class="formElement">
+          <span class="formLabel">What's your phone number?*</span>
+          <input type="text" name="phone" maxlength="10" required />
+        </div>
+        <div class="formElement">
+          <span class="formLabel">What's your t-shirt size?*</span>
+          <span class="subLabel">That's right, free shirts!</span>
+          <input type="radio" name="tshirt" value="S" required> <span class="radioLabel">S</span>
+          <input type="radio" name="tshirt" value="M" required> <span class="radioLabel">M</span>
+          <input type="radio" name="tshirt" value="L" required> <span class="radioLabel">L</span>
+          <input type="radio" name="tshirt" value="XL" required> <span class="radioLabel">XL</span>
+        </div>
+        <div class="formElement">
+          <span class="formLabel">Any dietary restrictions we should know about?</span>
+         <span class="subLable">And free food!</span>
+         <input type="text" name="food" />
+        </div>
+        <div class="formElement">
+          <span class="formLabel">What school are you from?*</span>
+          <input type="radio" name="school" value="BHHS" required> <span class="radioLabel">BHHS</span>
+          <input type="radio" name="school" value="other" id="otherSchoolButton" required> <span class="radioLabel"><input type="text" id="otherSchool"  placeholder="other" /></span>
+        </div>
+        <div class="formElement">
+          <span class="formLabel">What's your GitHub username?</span>
+           <span class="subLabel">If you don't know what this is, just skip it</span>
+           <input type="text" name="github" />
+        </div>
+        <div class="formElement">
+          <span class="formLabel">How'd you find out about HackBloomfield?</span>
+         <input type="radio" name="refer" value="socialMedia"> <span class="radioLabel">Social Media</span>
+         <input type="radio" name="refer" value="MLH"> <span class="radioLabel">MLH</span>
+         <input type="radio" name="refer" value="posters"> <span class="radioLabel">Posters around school</span>
+         <input type="radio" name="refer" value="other"> <span class="radioLabel">Other</span>
+        </div>
+        <div class="formElement">
+          <span class="formLabel">If you are from either of these places, would you be interested in a bus to HackBloomfield?</span>
+           <span class="subLabel">We can only provide a bus if there is enough interest and funding, so get your friends to sign up too!</span>
+           <input type="radio" name="bus" value="windsor"> <span class="radioLabel">Yes, Windsor</span>
+           <input type="radio" name="bus" value="toronto"> <span class="radioLabel">Yes, Toronto</span>
+        </div>
+        <div class="formElement">
+          <span class="formLabel">Do you have a resume you'd like to share?</span>
+          <span class="subLabel">This is optional</span>
+          <input type="file" id="resumeUpload" />
+          <input type="hidden" value="" id="resumeLink" />
+        </div>
+        <div class="formElement">
+          <span class="formLabel">Anything else we should know?</span>
+          <input type="text" name="anythingElse" />
+        </div>
+        <div class="formElement">
+          <span class="formLabel">I agree to the terms of both the MLH Contest Terms and Conditions and the MLH Privacy Policy.*</span>
+          <span class="subLabel">Please note that you may receive pre and post-event informational e-mails and occasional messages about hackathons from MLH as per the MLH Privacy Policy.</span>
+         <input type="radio" name="mlh1" value="yes" required> <span class="radioLabel">Yes</span>
+        </div>
+        <div class="formElement">
+          <span class="formLabel">I agree to the Major League Hacking Code of Conduct*</span>
+         <input type="radio" name="mlh2" value="yes" required> <span class="radioLabel">Yes</span>
+        </div>
         <input type="submit" value="submit" />
       </form>
     </div>

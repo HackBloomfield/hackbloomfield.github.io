@@ -235,6 +235,9 @@ h1{
     border-bottom: 1px solid $sub-color;
     max-width: 75%;
   }
+  .formElement{
+    margin-bottom: 50px;
+  }
   input:focus{
     border-bottom: 2px solid $main-color;
     outline: none;
