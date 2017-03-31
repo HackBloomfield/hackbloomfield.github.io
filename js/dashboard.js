@@ -11,6 +11,7 @@ firebase.auth().onAuthStateChanged(function(user) {
           var val = snapshot.val();
           if(val == null){
             appStatus.text("Yet to be determined");
+            $("#applyButton").css("display","block");
           }else if(val.accepted){
             appStatus.text("Accepted");
           }else if(val.accepted == false){
@@ -19,6 +20,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         });
       }else{
         appStatus.text("You haven't applied yet!");
+        $("#applyButton").css("display","block");
       }
     });
   }else{

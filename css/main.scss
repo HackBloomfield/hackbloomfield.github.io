@@ -124,7 +124,7 @@ h1{
   color: $sub-color;
 }
 
-#signUpButton{
+.signUpButton{
   display: block;
   font-size: 2em;
   margin-top: 7%;
@@ -278,6 +278,12 @@ h1{
 }
 #appStatus{
   font-weight: bold;
+}
+#headerDiv{
+  margin-bottom: 20px;
+}
+#applyButton{
+  display: none;
 }
 @media screen and (max-width: 500px){
   #applyForm{
