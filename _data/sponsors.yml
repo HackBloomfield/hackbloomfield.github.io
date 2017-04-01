@@ -1,3 +1,6 @@
 - name: Wolfram
   image: wolfram.png
   link: https://wolfram.com
+- name: Soylent
+  image: soylent.png
+  link: https://soylent.com
