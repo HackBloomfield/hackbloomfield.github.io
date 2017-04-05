@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/main.css" />
+    <style>body{padding-top: 20px; padding-bottom: 20px;}</style>
+    <title>Apply • HackBloomfield</title>
+  </head>
+  <body>
+    <div id="appsView">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Birth</th>
+          <th>Gender</th>
+          <th>Grade</th>
+          <th>Bus?</th>
+          <th>School</th>
+          <th>GitHub</th>
+          <th>Other Info</th>
+        </tr>
+        <tr v-for="app in appsDB">
+          <td>{{ 'app.fullName' | angular }}</td>
+          <td>{{ 'app.dobDay' | angular }}/{{ 'app.dobMonth' | angular }}/{{ 'app.dobYear' | angular }}</td>
+          <td>{{ 'app.gender' | angular }}</td>
+          <td>{{ 'app.grade' | angular }}</td>
+          <td>{{ 'app.bus' | angular }}</td>
+          <td>{{ 'app.school' | angular }}</td>
+          <td>{{ 'app.github' | angular }}</td>
+          <td>{{ 'app.anythingElse' | angular }}</td>
+        </tr>
+      </table>
+    </div>
+    {% include js.html %}
+    <script type="text/javascript" src="/js/appAdmin.js"></script>
+  </body>
+</html>

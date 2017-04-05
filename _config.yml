@@ -50,6 +50,7 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-angular
   - jekyll-assets
   - jekyll-pdf
 exclude:

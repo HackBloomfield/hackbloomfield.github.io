@@ -290,6 +290,13 @@ h1{
 #applyButton{
   display: none;
 }
+#appsView{
+  table{
+    td, th{
+      padding: 7px;
+    }
+  }
+}
 @media screen and (max-width: 500px){
   #applyForm{
     .formLabel{

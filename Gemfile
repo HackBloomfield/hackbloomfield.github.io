@@ -29,3 +29,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jekyll-admin', group: :jekyll_plugins
 gem 'jekyll-assets'
 gem 'jekyll-pdf'
+gem 'jekyll-angular'

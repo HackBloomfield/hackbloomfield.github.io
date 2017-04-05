@@ -29,6 +29,8 @@ GEM
       jekyll (~> 3.3)
       sinatra (~> 1.4)
       sinatra-contrib (~> 1.4)
+    jekyll-angular (0.1.1)
+      jekyll (>= 2)
     jekyll-assets (2.2.8)
       extras (~> 0.1)
       fastimage (~> 2.0, >= 1.8)
@@ -96,6 +98,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.4.0)
   jekyll-admin
+  jekyll-angular
   jekyll-assets
   jekyll-browserify
   jekyll-feed (~> 0.6)
