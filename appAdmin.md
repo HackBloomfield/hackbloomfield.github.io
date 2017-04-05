@@ -1,3 +1,4 @@
 ---
 layout: appAdmin
+permalink: /appAdmin/
 ---
