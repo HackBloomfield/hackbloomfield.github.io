@@ -1,16 +1,19 @@
 {
   "rules": {
     "applications":{
-      ".read":"(root.child('users/'+auth.uid+'/admin').val() == true)",
-      ".write":"(root.child('users/'+auth.uid+'/admin').val() == true)",
+      ".read": "root.child('users/'+auth.uid+'/admin').val() == true",
+      ".write": "root.child('users/'+auth.uid+'/admin').val() == true",
       "$uid":{
-        ".read": "($uid === auth.uid)",
+        ".read": "$uid === auth.uid",
         ".write": "$uid === auth.uid"
       }
     },
     "appStatus":{
       ".read": "root.child('users/'+auth.uid+'/admin').val() == true",
-      ".write": "root.child('users/'+auth.uid+'/admin').val() == true"
+      ".write": "root.child('users/'+auth.uid+'/admin').val() == true",
+      "$uid":{
+        ".read": "$uid === auth.uid"
+      }
     }
   }
 }

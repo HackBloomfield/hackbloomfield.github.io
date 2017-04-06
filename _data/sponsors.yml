@@ -4,3 +4,6 @@
 - name: Soylent
   image: soylent.png
   link: https://soylent.com
+- name: GitHub
+  image: github-logo.png
+  link: https://github.com

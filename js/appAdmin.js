@@ -1,3 +1,6 @@
+/* global Vue */
+/* global firebase */
+
 var appsView = new Vue({
   el: '#appsView',
   firebase: {
