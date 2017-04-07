@@ -1,9 +1,16 @@
-- name: Wolfram
-  image: wolfram.png
-  link: https://wolfram.com
-- name: Soylent
-  image: soylent.png
-  link: https://soylent.com
 - name: GitHub
   image: github-logo.png
   link: https://github.com
+  level: silver
+- name: Wolfram
+  image: wolfram.png
+  link: https://wolfram.com
+  level: basic
+- name: Soylent
+  image: soylent.png
+  link: https://soylent.com
+  level: basic
+- name: linode
+  image: linode.png
+  link: https://linode.com
+  level: basic
