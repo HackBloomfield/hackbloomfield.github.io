@@ -2,6 +2,9 @@
   image: github-logo.png
   link: https://github.com
   level: silver
+- name: '1517'
+  link: https://1517fund.com
+  level: basic
 - name: Wolfram
   image: wolfram.png
   link: https://wolfram.com
