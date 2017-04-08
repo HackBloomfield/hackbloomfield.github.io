@@ -1,53 +1,46 @@
-var user = firebase.auth().currentUser;
-firebase.auth().onAuthStateChanged(function(user) {
-  if(user){
-    $(".notLoggedIn").hide();
-    $(".loggedIn").show();
+/* global firebase */
+/* global $, Vue */
+firebase.auth().onAuthStateChanged((usr) => {
+  let appForm = new Vue({
+    el: '#applyFormDiv',
+    firebase: {
+      myApp: {
+        source: firebase.database().ref('applications').child(usr.uid),
+        asObject: true,
+      },
+    },
+  });
+  if (usr) {
+    $('.notLoggedIn').hide();
+    $('.loggedIn').show();
 
-    $("#nameInput").val(firebase.auth().currentUser.displayName);
-    $("#emailInput").val(firebase.auth().currentUser.email);
-    firebase.database().ref('applications/' + firebase.auth().currentUser.uid).once('value', function(snapshot){
-        var val = snapshot.val();
-        if(val != null){
-            $("[name = 'dobMonth']").val(val.dobMonth);
-            $("[name='grade'][value="+val.grade+"]").prop('checked', true);
-            $("[name = 'dobYear']").val(val.dobYear);
-            $("[name = 'dobDay']").val(val.dobDay);
-            $("[name = 'gender']").val(val.gender);
-            $("[name = 'phone']").val(val.phone);
-            $("[name='tshirt'][value="+val.tshirt+"]").prop('checked', true);
-            $("[name = 'food']").val(val.food);
-            $("[name = 'github']").val(val.github);
-            $("[name='refer'][value="+val.refer+"]").prop('checked', true);
-            $("[name = 'anythingElse']").val(val.anythingElse);
-            $("[name='mlh1'][value="+val.mlh1+"]").prop('checked', true);
-            $("[name='mlh2'][value="+val.mlh2+"]").prop('checked', true);
-        }
-    });
-  }else{
-    window.location.replace("/dashboard");
+    $('#nameInput').val(firebase.auth().currentUser.displayName);
+    $('#emailInput').val(firebase.auth().currentUser.email);
+  } else {
+    /* global window */
+    window.location.replace('/dashboard');
   }
 });
-$("#otherSchool")
-  .keyup(function(){
-    $("#otherSchoolButton").attr("value", $("#otherSchool").val());
-    $("#otherSchoolButton").prop("checked", true);
-
-  })
-$("#applyForm")
-  .submit(function(e){
+$('#otherSchool')
+  .keyup(() => {
+    $('#otherSchoolButton').attr('value', $('#otherSchool').val());
+    $('#otherSchoolButton').prop('checked', true);
+  });
+$('#applyForm')
+  .submit((e) => {
     e.preventDefault();
-    var formDataArray = $("#applyForm").serializeArray();
-    var resume = $("#resumeUpload")[0].files[0];
-    if(resume != null){
-        storageRef.child("resumes/" + UUIDv4() + ".pdf").put(resume).then(function(snapshot){
-      function objectifyForm(formArray){returnArray={};for(var i=0;i<formArray.length;i++){returnArray[formArray[i]['name']]=formArray[i]['value'];}returnArray.resume = snapshot.a.downloadURLs[0]; return returnArray;}
+    const formDataArray = $('#applyForm').serializeArray();
+    const resume = $('#resumeUpload')[0].files[0];
+    if (resume != null) {
+      /* global storageRef, UUIDv4 */
+      storageRef.child('resumes/' + UUIDv4() + '.pdf').put(resume).then((snapshot) => {
+        function objectifyForm(formArray){returnArray={}; for(var i=0;i<formArray.length;i++){returnArray[formArray[i]['name']]=formArray[i]['value'];}returnArray.resume = snapshot.a.downloadURLs[0]; return returnArray;}
       firebase.database().ref('applications/' + firebase.auth().currentUser.uid).set(objectifyForm(formDataArray));
     });
-    }else{
-        function objectifyForm(formArray){returnArray={};for(var i=0;i<formArray.length;i++){returnArray[formArray[i]['name']]=formArray[i]['value'];} return returnArray;}
+    } else {
+      function objectifyForm(formArray){returnArray={};for(var i=0;i<formArray.length;i++){returnArray[formArray[i]['name']]=formArray[i]['value'];} return returnArray;}
       firebase.database().ref('applications/' + firebase.auth().currentUser.uid).set(objectifyForm(formDataArray)).then(function(){
-          window.location.replace("/dashboard");
+          window.location.replace('/dashboard');
       });
     }
 
