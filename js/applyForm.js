@@ -13,7 +13,7 @@ firebase.auth().onAuthStateChanged((usr) => {
   if (usr) {
     $('.notLoggedIn').hide();
     $('.loggedIn').show();
-
+    // TODO: fix other schools issue
     $('#nameInput').val(firebase.auth().currentUser.displayName);
     $('#emailInput').val(firebase.auth().currentUser.email);
   } else {
